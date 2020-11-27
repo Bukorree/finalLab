@@ -25,7 +25,7 @@
 
         <div class="container shadow p-3 mb-5 bg-white rounded">
             <label for="exampleInputEmail1">Name <?php echo $_GET['N'] ?> </label>
-            <form action="insert.php" method="GET">
+            <form action="edit.php" method="GET">
 
                 <div class="display-5 form-group">
                   <label for="exampleInputPassword1">Weight</label>
