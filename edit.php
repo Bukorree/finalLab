@@ -9,8 +9,9 @@
         $id = $_GET['id'];
         $w = $_GET['W'];
         $h = $_GET['H'];
+        
         $bmi = ($w)/(($h/100)*($h/100));
-        $sql = "UPDATE bmiDB SET  weight='$w' , height='$h' , bmi='&bmi',  link='$link' WHERE id=$id";
+        $sql = "UPDATE bmiDB SET name='$_GET['N']', weight='$w' , height='$h' , bmi='&bmi',  link='$link' WHERE id=$id";
    
         if (mysqli_query($conn, $sql)) {
     header("location:show.php");
