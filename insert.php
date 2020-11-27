@@ -13,12 +13,12 @@
         $sql = "INSERT INTO bmiDB (name , height , weight , bmi) VALUES ('$n', '$w', '$h' , '$bmi')";
    
         if (mysqli_query($conn, $sql)) {
-//     header("location:show.php");
+    header("location:show.php");
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
         
-  
+        
         mysqli_close($conn);
         
 ?>
