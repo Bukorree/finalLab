@@ -33,7 +33,7 @@ $res = mysqli_query($conn, 'SELECT * FROM bmiDB');
             <a class="nav-link" href="show.php">Show</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="sad.html">Insert</a>
+            <a class="nav-link" href="form.html">Insert</a>
         </ul>
       </div>
     </div>
