@@ -35,6 +35,9 @@
                     <label for="exampleInputEmail1">Height</label>
                     <input type="number" class="form-control" name="H" value="<?php echo $_GET['We'] ?>">
                   </div>
+                <div class="display-5 form-group">
+                    <input type="number" class="form-control" name="id" value="<?php echo $_GET['ide'] ?>">
+                  </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
