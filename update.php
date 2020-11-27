@@ -4,6 +4,7 @@
     $id = $_GET['ide'];
     $w = $_GET['We'];
     $h = $_GET['He'];
+    $n = $_GET['N'];
 
     
 ?>
