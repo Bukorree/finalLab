@@ -39,6 +39,9 @@
                 <div class="display-5 form-group">
                     <input type="hidden" class="form-control" name="id" value="<?php echo $_GET['ide'] ?>">
                   </div>
+                <div class="display-5 form-group">
+                    <input type="hidden" class="form-control" name="N" value="<?php echo $_GET['N'] ?>">
+                  </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
