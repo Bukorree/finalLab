@@ -29,15 +29,15 @@
 
                 <div class="display-5 form-group">
                   <label for="exampleInputPassword1">Weight</label>
-                  <input type="number" class="form-control" name="W" value="<?php echo $_GET['He'] ?>">
+                  <input type="number" class="form-control" name="W" value=<?php echo $_GET['He'] ?>>
                 </div>
 
                 <div class="display-5 form-group">
                     <label for="exampleInputEmail1">Height</label>
-                    <input type="number" class="form-control" name="H" value="<?php echo $_GET['We'] ?>">
+                    <input type="number" class="form-control" name="H" value=<?php echo $_GET['We'] ?>>
                   </div>
                 <div class="display-5 form-group">
-                    <input type="hidden" class="form-control" name="id" value="<?php echo $_GET['ide'] ?>">
+                    <input type="hidden" class="form-control" name="id" value=<?php echo $_GET['ide'] ?>>
                   </div>
                 <div class="display-5 form-group">
                     <input type="hidden" class="form-control" name="N" value="<?php echo $_GET['N'] ?>">
