@@ -14,7 +14,7 @@
         $sql = "UPDATE bmiDB SET name='$_GET['N']', weight='$w' , height='$h' , bmi='&bmi',  link='$link' WHERE id=$id";
    
         if (mysqli_query($conn, $sql)) {
-    header("location:show.php");
+//     header("location:show.php");
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
