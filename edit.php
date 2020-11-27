@@ -6,9 +6,9 @@
                 die('Failed to connect to MySQL: '.mysqli_connect_error());
             }
 
-        $id = $_GET['ide'];
-        $w = $_GET['We'];
-        $h = $_GET['He'];
+        $id = $_GET['id'];
+        $w = $_GET['W'];
+        $h = $_GET['H'];
         $bmi = ($w)/(($h/100)*($h/100));
         $sql = "UPDATE bmiDB SET  weight='$w' , height='$h' , bmi='&bmi',  link='$link' WHERE id=$id";
    
