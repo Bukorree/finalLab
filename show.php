@@ -54,6 +54,7 @@ $res = mysqli_query($conn, 'SELECT * FROM bmiDB');
       <th> <div align="center">น้ำหนัก</div></th>
       <th> <div align="center">ส่วนสูง</div></th>
       <th> <div align="center">BMI</div></th>
+      <th> <div align="center">แก้ไข</div></th>
     </tr>
   </thead>
   
@@ -65,6 +66,20 @@ $res = mysqli_query($conn, 'SELECT * FROM bmiDB');
       <td align="center"><?php echo $Result['weight'];?></td>
       <td align="center"><?php echo $Result['height'];?></td>
       <td align="center"><?php echo $Result['bmi'];?></td>
+      <td align="center"> 
+        <form action="update.php" method="GET">
+                <div class="display-5 form-group">
+                  <label for="exampleInputPassword1">Weight</label>
+                  <input type="hidden" class="form-control" name="W" id="exampleInputPassword1">
+                </div>
+                <div class="display-5 form-group">
+                    <label for="exampleInputEmail1">Height</label>
+                    <input type="hidden" class="form-control" name="H" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+         </form>
+      </td>
     </tr>
 <?php
 }
