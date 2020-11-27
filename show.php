@@ -69,16 +69,16 @@ $res = mysqli_query($conn, 'SELECT * FROM bmiDB');
       <td align="center"> 
         <form action="update.php" method="GET">
                 <div class="display-5 form-group">
-                  <input type="hidden" class="form-control" name="We" value="<?php echo $Result['weight']; ?>">
+                  <input type="hidden" class="form-control" name="We" value=<?php echo $Result['weight']; ?>>
                 </div>
                 <div class="display-5 form-group">
                   <input type="hidden" class="form-control" name="N" value="<?php echo $Result['name']; ?>">
                 </div>
                 <div class="display-5 form-group">
-                    <input type="hidden" class="form-control" name="He" value="<?php echo $Result['height']; ?>">
+                    <input type="hidden" class="form-control" name="He" value=<?php echo $Result['height']; ?>>
                  </div>
                 <div class="display-5 form-group">
-                    <input type="hidden" class="form-control" name="ide" value="<?php echo $Result['id']; ?>">
+                    <input type="hidden" class="form-control" name="ide" value=<?php echo $Result['id']; ?>>
                  </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
          </form>
